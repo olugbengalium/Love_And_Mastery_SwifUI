@@ -11,6 +11,11 @@
 		656BD34B29E0B78A00604090 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BD34A29E0B78A00604090 /* ContentView.swift */; };
 		656BD34D29E0B78D00604090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656BD34C29E0B78D00604090 /* Assets.xcassets */; };
 		656BD35029E0B78D00604090 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656BD34F29E0B78D00604090 /* Preview Assets.xcassets */; };
+		656BD35829E0B90800604090 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 656BD35629E0B90800604090 /* success.m4a */; };
+		656BD35929E0B90800604090 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 656BD35729E0B90800604090 /* chimeup.mp3 */; };
+		656BD36129E0BF2200604090 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BD36029E0BF2200604090 /* OnboardingView.swift */; };
+		656BD36329E0BF3300604090 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BD36229E0BF3300604090 /* HomeView.swift */; };
+		65FD06D229E31DFA004F5A12 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD06D129E31DFA004F5A12 /* CircleGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		656BD34A29E0B78A00604090 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		656BD34C29E0B78D00604090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		656BD34F29E0B78D00604090 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		656BD35629E0B90800604090 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		656BD35729E0B90800604090 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		656BD35F29E0BE6B00604090 /* LoveWealth-SwifUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LoveWealth-SwifUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		656BD36029E0BF2200604090 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		656BD36229E0BF3300604090 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		65FD06D129E31DFA004F5A12 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,12 @@
 		656BD34729E0B78A00604090 /* LoveWealth_SwifUI */ = {
 			isa = PBXGroup;
 			children = (
+				656BD35F29E0BE6B00604090 /* LoveWealth-SwifUI-Info.plist */,
 				656BD34829E0B78A00604090 /* LoveWealth_SwifUIApp.swift */,
-				656BD34A29E0B78A00604090 /* ContentView.swift */,
+				656BD35C29E0BBD600604090 /* Screens */,
+				656BD35E29E0BC1100604090 /* Utility */,
+				656BD35D29E0BC0600604090 /* Views */,
+				656BD35B29E0B93E00604090 /* Sounds */,
 				656BD34C29E0B78D00604090 /* Assets.xcassets */,
 				656BD34E29E0B78D00604090 /* Preview Content */,
 			);
@@ -65,6 +80,40 @@
 				656BD34F29E0B78D00604090 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		656BD35B29E0B93E00604090 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				656BD35729E0B90800604090 /* chimeup.mp3 */,
+				656BD35629E0B90800604090 /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		656BD35C29E0BBD600604090 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				656BD34A29E0B78A00604090 /* ContentView.swift */,
+				656BD36029E0BF2200604090 /* OnboardingView.swift */,
+				656BD36229E0BF3300604090 /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		656BD35D29E0BC0600604090 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65FD06D129E31DFA004F5A12 /* CircleGroupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		656BD35E29E0BC1100604090 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656BD35929E0B90800604090 /* chimeup.mp3 in Resources */,
 				656BD35029E0B78D00604090 /* Preview Assets.xcassets in Resources */,
+				656BD35829E0B90800604090 /* success.m4a in Resources */,
 				656BD34D29E0B78D00604090 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FD06D229E31DFA004F5A12 /* CircleGroupView.swift in Sources */,
+				656BD36129E0BF2200604090 /* OnboardingView.swift in Sources */,
+				656BD36329E0BF3300604090 /* HomeView.swift in Sources */,
 				656BD34B29E0B78A00604090 /* ContentView.swift in Sources */,
 				656BD34929E0B78A00604090 /* LoveWealth_SwifUIApp.swift in Sources */,
 			);
@@ -270,11 +324,13 @@
 				DEVELOPMENT_TEAM = TNDSG59C74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LoveWealth-SwifUI-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +355,13 @@
 				DEVELOPMENT_TEAM = TNDSG59C74;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LoveWealth-SwifUI-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
